@@ -1,10 +1,10 @@
-#number of steps to reduce a number to zero
-#given an int, reutrn the number of steps to reduct it to 0
+#!number of steps to reduce a number to zero
+#!given an int, reutrn the number of steps to reduct it to 0
 
 
-#ex: 14 output: 6
-#     8 output 4
-#     0 output 0
+#*ex: 14 output: 6
+#*     8 output 4
+#*     0 output 0
 
 
 def numsteps(num: int):

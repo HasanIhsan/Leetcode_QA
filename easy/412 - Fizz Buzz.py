@@ -1,8 +1,8 @@
-#given an int n, return a  string array answer where:
-# arr[i] == "fizzbuzz" if i is divisable by 3 and 5
-# arr[i] == "fizzbuzz" if i is divisable by 3 
-# arr[i] == "fizzbuzz" if i is divisable by  5
-# arr[i] == i (as string) if none of the above
+#! given an int n, return a  string array answer where:
+#* arr[i] == "fizzbuzz" if i is divisable by 3 and 5
+#* arr[i] == "fizzbuzz" if i is divisable by 3 
+#* arr[i] == "fizzbuzz" if i is divisable by  5
+#* arr[i] == i (as string) if none of the above
 
 
 def fizzbuzz(lenght):

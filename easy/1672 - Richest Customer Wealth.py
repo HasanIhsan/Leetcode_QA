@@ -1,12 +1,12 @@
-#give a  m x n integer gird where account [i][j] return the wealth of the richest person
-#input = [[7,1,3],[2,8,7],[1,9,5]]
-#output = 17
+#!give a  m x n integer gird where account [i][j] return the wealth of the richest person
+#*input = [[7,1,3],[2,8,7],[1,9,5]]
+#*output = 17
 
-#basically add all the nums and return the largest sum
+#!basically add all the nums and return the largest sum
 
 
-#note: this was acually done by me!
-#i needed help on adding the sums in the array so google helped
+#*note: this was acually done by me!
+#*i needed help on adding the sums in the array so google helped
 def richcustomer(arr):
     total = 0
     min = 0
