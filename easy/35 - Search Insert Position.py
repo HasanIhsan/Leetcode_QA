@@ -17,8 +17,10 @@
 #Output: 4
 
 def searchInsert(nums, target):
-    index = 0
+     
     
+    """ method 1
+    index = 0
     # Method 1: (this is complicated and what i first thought of) O(n + n + n log n + n) = O(n log n)
     temp = nums
     # Iterate through the array
@@ -41,11 +43,28 @@ def searchInsert(nums, target):
                 if temp[x] == target:
                     index = x
                     return index
+    """
+    # Method 2  O(log n)
+    left, right = 0, len(nums) - 1
+    
+    while left <= right:
+        mid = (left + right) // 2 # Find the Middle index
+        if nums[mid] == target: #Target Found
+            return mid
+        elif nums[mid] < target: # Target is on the right side
+            left = mid + 1
+        else: # Target is on the left side
+            right = mid - 1
+        
+    #if the target is not found, left is the correct insertion index
+    return left
+  
             
     
-            
+
     
-    return index
+    
+     
 
 
 if __name__ == "__main__":
