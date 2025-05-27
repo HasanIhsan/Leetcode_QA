@@ -59,5 +59,14 @@ def convert_my_dollars(usd, currency):
             
             
         
+        
+# example 2 simpler
+def convert_my_dollars_simple(usd, currency):
+    conversion_rate = CONVERSION_RATES[currency]
+    
+    if currency[0].lower() not in "aeiou":
+        conversion_rate = int(str(conversion_rate), 2)
+    
+    return f"You now have {usd * conversion_rate} of {currency}."
     
     
